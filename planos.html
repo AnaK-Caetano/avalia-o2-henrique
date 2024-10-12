@@ -7,92 +7,108 @@
     <link rel="shortcut icon" href="assets/images/logo/LogoTads.svg" type="image/x-icon">
     <title>Grupo de estudo/ Tads</title>
 
-    
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check" />
 
     <link rel="stylesheet" href="css/config.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/planos.css">
 
 </head>
 
 <body id="home__container">
     <header id="header__container">
-        <nav class=" header__item nav__container">
+        <nav class=" nav__container">
             <div class="header__logo">
-                <img class="header__image" src="assets/images/logo/LogoTads.svg" alt="">
+                <img src="assets/images/logo/LogoTads.svg" alt="">
                 <h1 class="header__title">Grupo de Estudo/TADS</h1>
+                <h1 class="header__title header__mobile">GE/TADS</h1>
             </div>
 
-            <ul class="header__list">
-                <li><a href="home.html">Home</a></li>
+            <input class="header__mobile" type=checkbox id="menu-check">
+            <label class="header__mobile" for="menu-check"><span class="material-symbols-outlined menu-mobile">menu</span></label>
+
+            <ul id="header__links">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="disciplinas.html">Disciplinas</a></li>
                 <li><a href="planos.html">Planos</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
-        <div class="header__item header__content">
-            <div class="header__">
-                <h2>Bem-Vindo</h2>
-                <h3>Grupo de Estudos/TADS</h3>
-                <p>Nosso grupo de estudos se reune todas as tardes na sala de estudos do curso TADS para revisar os
-                    assuntos apresentados pelos professores durante as aulas da semana. Evitamos acumular conteúdo o
-                    máximo possível!</p>
-                <button>Participe</button>
-            </div>
-            <div class="header__card">
-                <img src="assets/images/home/grupo-1.png" alt="">
-            </div>
-        </div>
     </header>
-
     <main class="main__container">
-        Mas o acesso a escola não é gratuito? Precisa pagar?
+        <section class="section__title">
+            <h3>Planos</h3>
+            <h2> Mas o acesso a escola não é gratuito? Precisa pagar?</h2>
+            <p>Qualquer estudante do curso pode participar sem pagar, mas contrinuimos com um valor simbólico para café e energia! Ninguém é de ferro!!!!</p>
+        </section>
 
-Qualquer estudante do curso pode participar sem pagar, mas contrinuimos com um valor simbólico para café e energia! Ninguém é de ferro!!!!
-
-Básico
-R$0
-/free
-Traga seu café e sua vontade de estudar.
-Participação dos grupos
-Tira dúvidas
-Ajuda em atividades
-Não fazemos suas provas
-Nem seus trabalhos
-Mais detalhes
-
-Plus
-R$5
-/mês
-Café gostoso e sempre quente, mas a vontade de estudar continua sendo sua.
-Tudo do plano free
-Acesso a nossa máquina de café
-Não fazemos suas provas
-Nem seus trabalhos
-Mais detalhes
-
-Pro
-R$10
-/mês
-Tem dúvidas muito específicas? Então marque um horário individual!
-Tudo do plano plus
-Ajuda individual
-Não fazemos suas provas
-Nem seus trabalhos
-Você achou mesmo que teria um plano onde fariámos suas provas e trabalhos?
-Mais detalhes
+        <section class="section__content">
+           <div id="cards__container">
+               <div class="card__content">
+                <p class="card__title">Básico</p>
+                <div class="preco">
+                    <p>R$0</p>
+                    <p>/free</p>
+                </div>
+                <p>Traga seu café e sua vontade de estudar.</p>
+                <ul>
+                    <li><span class="material-symbols-outlined"> check </span>Participação dos grupos</li>
+                    <li><span class="material-symbols-outlined"> check </span>Tira dúvidas</li>
+                    <li><span class="material-symbols-outlined"> check </span>Ajuda em atividades</li>
+                    <li><span class="material-symbols-outlined"> check </span>Não fazemos suas provas</li>
+                    <li><span class="material-symbols-outlined"> check </span>Nem seus trabalhos</li>
+                </ul>
+                <button>Mais detalhes</button>
+               </div>
+               <div class="card__content">
+                <p class="card__title">Pro</p>
+                <div class="preco">
+                    <p>R$10</p>
+                    <p>/mês</p>
+                </div>
+                <p>Tem dúvidas muito específicas? Então marque um horário individual!</p>
+                <ul>
+                    <li><span class="material-symbols-outlined"> check </span>Tudo do plano plus</li>
+                    <li><span class="material-symbols-outlined"> check </span>Ajuda individual</li>
+                    <li><span class="material-symbols-outlined"> check </span>Não fazemos suas provas</li>
+                    <li><span class="material-symbols-outlined"> check </span>Nem seus trabalhos</li>
+                </ul>
+                <button>Mais detalhes</button>
+            </div>
+            <div class="card__content">
+                <p class="card__title">Plus</p>
+                <div class="preco">
+                    <p>R$5</p>
+                    <p>/mês</p>
+                </div>
+                <p>Café gostoso e sempre quente, mas a vontade de estudar continua sendo sua.</p>
+                <ul>
+                    <li><span class="material-symbols-outlined"> check </span>Tudo do plano free</li>
+                    <li><span class="material-symbols-outlined"> check </span>Acesso a nossa máquina de café</li>
+                    <li><span class="material-symbols-outlined"> check </span>Não fazemos suas provas</li>
+                    <li><span class="material-symbols-outlined"> check </span>Nem seus trabalhos</li>
+                    <li><span class="material-symbols-outlined"> check </span>Você achou mesmo que teria um plano onde fariámos suas provas e trabalhos?</li>
+                </ul>
+                <button>Mais detalhes</button>
+               </div>
+           </div>
+        </section>
     </main>
     
     <footer id="footer__container">
         <div id="footer__icon">
-            <img src="assets/images/socials/facebook.svg" alt="Logo do Facebook">
-            <img src="assets/images/socials/instagram.svg" alt="Logo do Instagram">
-            <img src="assets/images/socials/pinterest.svg" alt="Logo do Pinterest">
-            <img src="assets/images/socials/tiktok.svg" alt="Logo do Tiktok">
-            <img src="assets/images/socials/twitter.svg" alt="Logo do Twitter">
-            <img src="assets/images/socials/whatsapp.svg" alt="Logo do Whatsapp">
-            <img src="assets/images/socials/youtube.svg" alt="Logo do Youtube">
+            <a href=""><img src="assets/images/socials/facebook.svg" alt="Logo do Facebook"></a>
+            <a href=""><img src="assets/images/socials/instagram.svg" alt="Logo do Instagram"></a>
+            <a href=""><img src="assets/images/socials/pinterest.svg" alt="Logo do Pinterest"></a>
+            <a href=""><img src="assets/images/socials/tiktok.svg" alt="Logo do Tiktok"></a>
+            <a href=""><img src="assets/images/socials/twitter.svg" alt="Logo do Twitter"></a>
+            <a href=""><img src="assets/images/socials/whatsapp.svg" alt="Logo do Whatsapp"></a>
+            <a href=""><img src="assets/images/socials/youtube.svg" alt="Logo do Youtube"></a>
         </div>
         <p>©Grupo de Estudo, 2024. All rights reserved.</p>
     </footer>

@@ -1,0 +1,143 @@
+.main__container main {
+    grid-area: main;
+    padding: 0 4rem;
+    grid-template-columns: 100%;
+}
+
+.main__container {
+    display: grid;
+    grid-template-areas:
+        'section-title'
+        'cards';
+    gap: 2rem;
+}
+
+.section__title {
+    grid-area: 'section-title';
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3{
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--primary-color);
+    font-size: 16px;
+    font-family: var(--body-font);
+}
+
+.section__content {
+    grid-area: 'cards';
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+#cards__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card__content {
+    width: calc(100% / 3 - 2rem);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    padding: 2.5rem;
+    display: grid;
+    grid-template-areas:
+        'tipo'
+        'descricao'
+        'lista'
+        'botao';
+    justify-items: center;
+    text-align: center;
+    gap: 2.6rem;
+    border-radius: 5px;
+}
+
+.card__title {
+    font-weight: bold;
+    font-family: var(--body-font);
+}
+
+.card__content p {
+    margin: 0;
+}
+
+.preco{
+    display: flex;
+}
+
+.preco p:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--preto);
+}
+
+.preco p:nth-child(2), .plano-tipo p {
+    color: var();
+}
+
+.card__content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card__content ul li {
+    padding: .5rem 0;
+}
+
+.card__content button {
+    cursor: pointer;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: auto;
+    justify-self: center;
+}
+
+.material-symbols-outlined{
+    color: var(--hover-color);
+}
+
+@media (max-width: 375px) {
+    .main__container main {
+        padding: 0 1rem;
+    }
+
+    .card__content {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .preco p:first-child {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .section__title h2 {
+        font-size: 18px;
+    }
+
+    .section__content {
+        gap: 1rem;
+    }
+
+    .card__content ul li {
+        padding: .3rem 0;
+    }
+
+    .card__content button {
+        padding: 8px 16px;
+    }
+}

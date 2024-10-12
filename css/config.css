@@ -1,14 +1,69 @@
 :root {
-    --bg-color: #1d2634;
     --primary-color:#00420C;
     --secondary-color: #FFFFFF;
-    --text-color: #212529;
+    --heading-font: 'Crimson Text', serif;
+    --body-font: 'Work Sans', serif;
+    --button-color: #212529;
+    --input-color: #EEEEEE;
+    --hover-color: #2f9e41;
+    --text-color: #FFFFFF;
+    --text-color-hover:#5569AF ;
+    --price-text:  #9B9D9F;
   }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 10px;
-    font-family: 
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-font);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+img {
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+#home__container{
+  display: grid;
+  grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+  gap: 2rem;
+  grid-template-columns: 100%;
+}
+
+main {
+  grid-area: 'main';
+  padding: 0 4rem;
+  grid-template-columns: 100%;
 }

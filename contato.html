@@ -7,66 +7,73 @@
     <link rel="shortcut icon" href="assets/images/logo/LogoTads.svg" type="image/x-icon">
     <title>Grupo de estudo/ Tads</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
 
 
     <link rel="stylesheet" href="css/config.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/contato.css">
 
 </head>
 
 <body id="home__container">
     <header id="header__container">
-        <nav class=" header__item nav__container">
+        <nav class=" nav__container">
             <div class="header__logo">
-                <img class="header__image" src="assets/images/logo/LogoTads.svg" alt="">
+                <img src="assets/images/logo/LogoTads.svg" alt="">
                 <h1 class="header__title">Grupo de Estudo/TADS</h1>
+                <h1 class="header__title header__mobile">GE/TADS</h1>
             </div>
 
-            <ul class="header__list">
-                <li><a href="home.html">Home</a></li>
+            <input class="header__mobile" type=checkbox id="menu-check">
+            <label class="header__mobile" for="menu-check"><span class="material-symbols-outlined menu-mobile">menu</span></label>
+
+            <ul id="header__links">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="disciplinas.html">Disciplinas</a></li>
                 <li><a href="planos.html">Planos</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
-        <div class="header__item header__content">
-            <div class="header__">
-                <h2>Bem-Vindo</h2>
-                <h3>Grupo de Estudos/TADS</h3>
-                <p>Nosso grupo de estudos se reune todas as tardes na sala de estudos do curso TADS para revisar os
-                    assuntos apresentados pelos professores durante as aulas da semana. Evitamos acumular conteúdo o
-                    máximo possível!</p>
-                <button>Participe</button>
-            </div>
-            <div class="header__card">
-                <img src="assets/images/home/grupo-1.png" alt="">
-            </div>
-        </div>
     </header>
 
     <main class="main__container">
-        Entre em Contato
+        <section class="section__title">
+            <h2>Entre em Contato</h2>
+            <p>Você irá nos encontrar todos os dias de tarde na sala de estudos do curso de Análise e Desenvolvimento de Sistemas do IFPE / Campus Recife</p>
+        </section>
 
-        Você irá nos encontrar todos os dias de tarde na sala de estudos do curso de Análise e Desenvolvimento de
-        Sistemas do IFPE / Campus Recife
-
-        Nome
-        Email
-        Mensagem
-        Enviar
+        <section class="section__content">
+            <form id="section__form" action="#">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text">
+                
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email">
+                
+                <label for="mensagem">Mensagem</label>
+                
+                <textarea id="mensagem" name="mensagem"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+            <img src="assets/images/contact/mapa.png" alt="ilustração do mapa do Campus IFPE">
+        </section>
     </main>
 
     <footer id="footer__container">
         <div id="footer__icon">
-            <img src="assets/images/socials/facebook.svg" alt="Logo do Facebook">
-            <img src="assets/images/socials/instagram.svg" alt="Logo do Instagram">
-            <img src="assets/images/socials/pinterest.svg" alt="Logo do Pinterest">
-            <img src="assets/images/socials/tiktok.svg" alt="Logo do Tiktok">
-            <img src="assets/images/socials/twitter.svg" alt="Logo do Twitter">
-            <img src="assets/images/socials/whatsapp.svg" alt="Logo do Whatsapp">
-            <img src="assets/images/socials/youtube.svg" alt="Logo do Youtube">
+            <a href=""><img src="assets/images/socials/facebook.svg" alt="Logo do Facebook"></a>
+            <a href=""><img src="assets/images/socials/instagram.svg" alt="Logo do Instagram"></a>
+            <a href=""><img src="assets/images/socials/pinterest.svg" alt="Logo do Pinterest"></a>
+            <a href=""><img src="assets/images/socials/tiktok.svg" alt="Logo do Tiktok"></a>
+            <a href=""><img src="assets/images/socials/twitter.svg" alt="Logo do Twitter"></a>
+            <a href=""><img src="assets/images/socials/whatsapp.svg" alt="Logo do Whatsapp"></a>
+            <a href=""><img src="assets/images/socials/youtube.svg" alt="Logo do Youtube"></a>
         </div>
         <p>©Grupo de Estudo, 2024. All rights reserved.</p>
     </footer>
